@@ -23,3 +23,73 @@
   padding: 8px;
   margin: 4px;
 }
+
+.header-content {
+  background-image: url(src/mobile-background.png);
+  background-size: 60%;
+  background-position: bottom right;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-color: #1C1A19;
+}
+
+.header-primary-text {
+  color: #FF6B00;
+  font-size: 56px;
+  font-family: 'Crete Round', serif;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  padding: 12px 0px;
+  margin-top: 120px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 12px;
+}
+
+.header-supporting-text {
+  color: #FFF5E1;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 12px;
+}
+
+.header-description {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 12px;
+}
+
+.header-social-media {
+  margin-bottom: 120px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.header-social-media > * {
+  margin: 10px 12px;
+}
+
+#github:hover {
+  background-color: #DBD8D7;
+}
+
+
+#github {
+  background-image: url('src/github.svg');
+}
+
+#github:hover {
+  background-image: url('src/github.svg');
+}
