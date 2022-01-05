@@ -1,0 +1,25 @@
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+.header-tab {
+  background-color: #3C3A39;
+  height: 44px;
+  display: flex;
+  width: 100hv;
+}
+
+.tab-title {
+  color:white;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 12px;
+  margin: 2px 12px;
+  flex-grow: 1;
+}
+
+.menu-button {
+  padding: 8px;
+  margin: 4px;
+}
