@@ -4,14 +4,14 @@
 }
 
 .header-tab {
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   height: 44px;
   display: flex;
-  width: 100hv;
+  width: 100%;
 }
 
 .tab-title {
-  color:white;
+  color: #ffffff;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   padding: 10px 12px;
@@ -31,16 +31,16 @@
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
-  background-color: #1C1A19;
+  background-color: #1c1a19;
 }
 
 .header-primary-text {
-  color: #FF6B00;
+  color: #ff6b00;
   font-size: 56px;
   font-family: 'Crete Round', serif;
   line-height: 64px;
   letter-spacing: 0.37px;
-  padding: 12px 0px;
+  padding: 12px 1px;
   margin-top: 120px;
   margin-left: 24px;
   margin-right: 24px;
@@ -48,8 +48,8 @@
 }
 
 .header-supporting-text {
-  color: #FFF5E1;
-  font-family: Roboto;
+  color: #fff5e1;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -60,12 +60,12 @@
 }
 
 .header-description {
-  font-family: Poppins;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 12px;
