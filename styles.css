@@ -80,16 +80,3 @@
 .header-social-media > * {
   margin: 10px 12px;
 }
-
-#github:hover {
-  background-color: #DBD8D7;
-}
-
-
-#github {
-  background-image: url('src/github.svg');
-}
-
-#github:hover {
-  background-image: url('src/github.svg');
-}
