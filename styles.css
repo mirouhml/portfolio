@@ -103,3 +103,57 @@ ul li {
   margin: auto;
   margin-bottom: 80px;
 }
+
+#featured-project {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+#featured-project-image {
+  display: block;
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+#featured-project-title {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091E42;
+}
+
+#featured-project-description {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+#featured-project-languages {
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  gap: 12px;
+}
+
+.flex-item {
+  border: 1px solid #8993A4;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 12px 10px;
+}
+
+#featured-project-button {
+  align-items: center;
+  padding: 12px;
+  background: #FF6B00;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px;
+  margin-top: 12px;
+}
