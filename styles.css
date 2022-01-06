@@ -82,3 +82,24 @@ ul li {
   display: inline;
   margin: 10px 12px;
 }
+
+#works-section-title {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 52px;
+  color: #1C1A19;
+  margin-top: 120px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+#separator {
+  border-bottom: 1px solid #212121;
+  width: 327px;
+  margin: auto;
+  margin-bottom: 80px;
+}
