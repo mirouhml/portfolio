@@ -83,6 +83,17 @@ ul.social-media li {
   margin: 10px 12px;
 }
 
+.works-section {
+  display: grid;
+}
+
+#featured-project {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
 #works-section-title {
   font-family: 'Crete Round', serif;
   font-style: normal;
@@ -102,11 +113,6 @@ ul.social-media li {
   width: 327px;
   margin: auto;
   margin-bottom: 80px;
-}
-
-#featured-project {
-  margin-right: 24px;
-  margin-left: 24px;
 }
 
 #featured-project-image {
@@ -148,7 +154,7 @@ ul.featured-project-languages li {
   padding: 12px 10px;
 }
 
-.featured-project-button {
+.featured-project-button:enabled {
   align-items: center;
   padding: 12px;
   background: #ff6b00;
@@ -212,6 +218,8 @@ ul.projects-container li {
 }
 
 .project-card-content {
+  display: flex;
+  flex-direction: column;
   padding-top: 84px;
   padding-left: 16px;
   padding-right: 16px;
@@ -253,7 +261,7 @@ ul.project-languages li {
   padding: 12px 10px;
 }
 
-.project-button {
+.project-button:enabled {
   margin-top: 22px;
   align-items: center;
   padding: 12px;
@@ -299,6 +307,8 @@ ul.project-languages li {
 }
 
 .about-me {
+  display: flex;
+  flex-direction: column;
   background-color: #1c1a19;
   text-align: center;
 }
