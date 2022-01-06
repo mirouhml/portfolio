@@ -71,14 +71,14 @@
   margin-bottom: 12px;
 }
 
-ul {
+ul.social-media {
   list-style-type: none;
   margin-bottom: 120px;
   margin-left: 24px;
   margin-right: 24px;
 }
 
-ul li {
+ul.social-media li {
   display: inline;
   margin: 10px 12px;
 }
@@ -132,14 +132,15 @@ ul li {
   margin-bottom: 12px;
 }
 
-#featured-project-languages {
+ul.featured-project-languages {
+  list-style-type: none;
   display: flex;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   gap: 12px;
 }
 
-.flex-item {
+ul.featured-project-languages li {
   border: 1px solid #8993A4;
   box-sizing: border-box;
   text-align: center;
@@ -156,4 +157,75 @@ ul li {
   border: none;
   padding: 12px;
   margin-top: 12px;
+}
+
+ul.projects-container {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 386px 386px 386px 386px 386px 386px;
+  align-content: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 120px;
+}
+
+ul.projects-container li {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(38, 38, 38, .7)), url('src/project-image.png');
+  background-size: cover;
+  margin-top: 24px;
+  background-repeat: no-repeat;
+}
+
+.project-card-content {
+  padding-top: 84px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.project-title {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.project-description {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul.project-languages {
+  list-style-type: none;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  gap: 12px;
+}
+
+ul.project-languages li {
+  border: none;
+  background: rgba(255, 255, 255, 0.24);
+  box-sizing: border-box;
+  text-align: center;
+  padding: 12px 10px;
+}
+
+.project-button {
+  margin-top: 22px;
+  align-items: center;
+  padding: 12px;
+  background: #FF6B00;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  color: #FFFFFF;
+  border: none;
+  width: 100%;
 }
