@@ -169,6 +169,7 @@ ul.projects-container {
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 120px;
+  grid-gap: 24px;
 }
 
 ul.projects-container li {
@@ -296,6 +297,8 @@ ul#information-list li {
 
 .information-list-item-title {
   display: inline-flex;
+  position: relative;
+  left: -11px;
 }
 
 .information-list-item-title img {

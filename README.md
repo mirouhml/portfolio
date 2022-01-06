@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> This the implementation of the first two sections of the portfolio.
+> This an implementation of a portfolio.
 
 ![screenshot](./src/screenshot.png)
 
