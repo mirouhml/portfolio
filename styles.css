@@ -32,7 +32,6 @@
   background-position: 100% 121%;
   display: flex;
   flex-direction: column;
-  background-repeat: no-repeat;
   background-color: #1c1a19;
 }
 
@@ -85,9 +84,9 @@ ul.social-media li {
   margin: 10px 12px;
 }
 
-a { 
+a {
   color: transparent; 
-} 
+}
 
 .works-section {
   display: grid;
