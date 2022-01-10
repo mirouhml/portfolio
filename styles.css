@@ -7,6 +7,7 @@
   background-color: #3c3a39;
   height: 44px;
   display: flex;
+  position: fixed;
   width: 100%;
 }
 
@@ -25,12 +26,12 @@
 }
 
 .header-content {
-  background-image: url(src/mobile-background.png);
-  background-size: 60%;
-  background-position: bottom right;
+  background-image: url(src/Illustration.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 100% 121%;
   display: flex;
   flex-direction: column;
-  background-repeat: no-repeat;
   background-color: #1c1a19;
 }
 
@@ -81,6 +82,10 @@ ul.social-media {
 ul.social-media li {
   display: inline;
   margin: 10px 12px;
+}
+
+a {
+  color: transparent;
 }
 
 .works-section {
@@ -318,7 +323,7 @@ ul.project-languages li {
   padding-top: 120px;
   padding-left: 24px;
   padding-right: 24px;
-  background-image: url('src/illustration-about-me-mobile.png');
+  background-image: url('src/illustration-about-me-mobile.svg');
   background-repeat: no-repeat;
   background-position: right bottom;
   padding-bottom: 170px;
