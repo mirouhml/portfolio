@@ -199,19 +199,24 @@
                         <h1 class="contact-me-form-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
                     </li>
                     <li>
-                        <input  class="input-style" type="text" id="name" name="user_name" placeholder="Full name">
+                        <input  class="input-style" type="text" id="name" required="required" name="user_name" placeholder="Full name">
                     </li>
                     <li>
                         <div id="separator3"></div>
                     </li>
                     <li>
-                        <input class="input-style" type="email" id="mail" name="user_email" placeholder="Email address">
+                        <input class="input-style" type="email" id="mail" required="required" name="user_email" placeholder="Email address">
                     </li>
                     <li>
                         <div id="separator3"></div>
                     </li>
                     <li>
-                        <textarea class="input-style" id="msg" name="user_message" placeholder="Enter text here"></textarea>
+                        <textarea class="input-style" id="msg" required="required" name="user_message" placeholder="Enter text here"></textarea>
+                    </li>
+                    <li>
+                        <button type="submit" class="project-button">
+                            submit
+                        </button>
                     </li>
                 </ul>
             </form>
