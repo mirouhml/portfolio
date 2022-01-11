@@ -370,6 +370,15 @@ ul#information-list {
   margin-bottom: 131px;
 }
 
+ul.footer-social-media {
+  list-style-type: none;
+  margin: auto;
+}
+
+ul.footer-social-media li {
+  display: inline;
+}
+
 ul#information-list li {
   margin-top: 44px;
   margin-bottom: 12px;
@@ -418,7 +427,9 @@ ul.information-list-subitems {
 
 input {
   border: 0;
-  width: 259px;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 295px;
   display: block;
 }
 
@@ -434,4 +445,17 @@ textarea {
   margin: auto;
   margin-top: 14px;
   margin-bottom: 24px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+#separator4 {
+  border-bottom: 1px solid #dfe1e6;
+  width: 100%;
+  margin-top: 136px;
+  margin-bottom: 25px;
 }
