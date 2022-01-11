@@ -370,6 +370,15 @@ ul#information-list {
   margin-bottom: 131px;
 }
 
+ul.footer-social-media {
+  list-style-type: none;
+  margin: auto;
+}
+
+ul.footer-social-media li {
+  display: inline;
+}
+
 ul#information-list li {
   margin-top: 44px;
   margin-bottom: 12px;
@@ -395,4 +404,60 @@ ul.information-list-subitems {
   line-height: 24px;
   color: #fff;
   margin-top: 32px;
+}
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 24px;
+}
+
+.contact-me-form-title {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-top: 120px;
+  margin-bottom: 73px;
+}
+
+input {
+  border: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 295px;
+  display: block;
+  padding: 16px 15px;
+}
+
+textarea {
+  border: 0;
+  width: 303px;
+  height: 114px;
+  padding: 12px;
+}
+
+.separator3 {
+  border-bottom: 1px solid #dbd8d7;
+  width: 327px;
+  margin: auto;
+  margin-top: 14px;
+  margin-bottom: 24px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+#separator4 {
+  border-bottom: 1px solid #dfe1e6;
+  width: 100%;
+  margin-top: 136px;
+  margin-bottom: 25px;
 }
