@@ -84,7 +84,7 @@ ul.social-media li {
   margin: 10px 12px;
 }
 
-a {
+.social-media a {
   color: transparent;
 }
 
@@ -460,4 +460,101 @@ textarea {
   width: 100%;
   margin-top: 136px;
   margin-bottom: 25px;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+@media only screen and (min-width: 1100px) {
+  .header-tab {
+    background-color: #3c3a39;
+    height: 72px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-content: center;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .tab-title {
+    font-family: 'Inter', sans-serif;
+    font-style: bold;
+    margin: 0;
+    align-self: center;
+    margin-left: 154px;
+    font-size: 20px;
+    font-weight: 600;
+    flex-grow: 1;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    list-style: none;
+  }
+
+  .desktop-menu li {
+    align-self: center;
+    margin-right: 32px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'inter', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    padding: 10px 12px;
+  }
+
+  .mail-icon {
+    margin-right: 52px;
+  }
+
+  .header-content {
+    background-image: url(src/Illustration-header-desktop.svg);
+    background-size: auto;
+    background-position: top right;
+    height: 798px;
+    flex-direction: row;
+    align-content: center;
+    padding-top: 72px;
+  }
+
+  .social-media {
+    display: none;
+  }
+
+  .header-text {
+    align-self: center;
+  }
+
+  .header-primary-text h1 {
+    font-size: 72px;
+    line-height: 81px;
+    font-weight: 100;
+  }
+
+  .header-primary-text {
+    margin-top: 0;
+  }
+
+  .header-description {
+    width: 400px;
+    font-weight: 10;
+  }
+
+  ul.header-social-media-desktop {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 23px;
+    margin-left: 36px;
+    margin-right: 87px;
+  }
 }
