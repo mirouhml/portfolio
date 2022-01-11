@@ -439,7 +439,7 @@ textarea {
   height: 114px;
 }
 
-#separator3 {
+.separator3 {
   border-bottom: 1px solid #dbd8d7;
   width: 327px;
   margin: auto;
