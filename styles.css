@@ -431,6 +431,7 @@ input {
   margin-right: 40px;
   width: 295px;
   display: block;
+  padding: 16px 15px;
 }
 
 textarea {
