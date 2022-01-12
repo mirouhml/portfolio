@@ -651,8 +651,15 @@ textarea {
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: auto;
     grid-gap: 40px;
-    margin-left: 141px;
-    margin-right: 141px;
+    margin: 0 141px 0 141px;
+  }
+
+  .project-languages {
+    margin-bottom: 16px;
+  }
+
+  .project-button:enabled {
+    visibility: hidden;
   }
 
   .about-me {
@@ -660,6 +667,7 @@ textarea {
     flex-direction: column;
     background-color: #1c1a19;
     text-align: center;
+    margin-top: 130px;
   }
 
   #about-me-content {
@@ -751,5 +759,18 @@ textarea {
     margin: auto;
     margin-top: 14px;
     margin-bottom: 24px;
+  }
+
+  #project1 div {
+    visibility: hidden;
+  }
+
+  #project1 {
+    background-image: url(src/project-image.svg);
+    border: 2px solid black;
+  }
+
+  #first-project-button {
+    visibility: visible;
   }
 }
