@@ -752,8 +752,4 @@ textarea {
     margin-top: 14px;
     margin-bottom: 24px;
   }
-
-  .project-button:enabled {
-    width: fit-content;
-  }
 }
