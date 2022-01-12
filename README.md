@@ -4,7 +4,7 @@
 
 > This an implementation of a portfolio.
 
-![screenshot](./src/screenshot.png)
+![screenshot](./src/desktop-screenshot.png)
 
 ## Live Demo
 
