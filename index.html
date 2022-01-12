@@ -22,28 +22,28 @@
                 </div>
                 <ul class="desktop-menu">
                     <li>
-                        <a>
+                        <a href="#portfolio">
                             <h4 class="menu-items">
                                 Portfolio
                             </h4>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="#about-me">
                             <h4 class="menu-items">
                                 About
                             </h4>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="#contact-me">
                             <h4 class="menu-items">
                                 Contact me
                             </h4>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="mailto:amarhamlaoui@gmail.com">
                             <img class="mail-icon" src="src/mail.svg" alt="Mail icon"/>
                         </a>
                     </li>
@@ -99,7 +99,7 @@
                 </ul>
             </div>
         </section>
-        <section class="works-section">
+        <section class="works-section" id="portfolio">
             <div class="works-section-title">
                 <h1 id="works-section-title">My Recent Works</h1>
                 <div id="separator"></div>
@@ -195,11 +195,11 @@
                 </li>
             </ul>
         </section>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <div id="about-me-content">
                 <h2 id="about-me-title">About me</h2>
                 <p id="about-me-description">Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
-                <button class="featured-project-button" type="button">Get My Resume</button>
+                <button class="about-me-button" type="button">Get My Resume</button>
             </div>
             <div id="separator2"></div>
             <ul id="information-list">
@@ -243,31 +243,35 @@
                 </li>
             </ul>
         </section>
-        <section class="contact-me">
+        <section class="contact-me" id="contact-me">
             <form action="https://formspree.io/f/xdobkqjy" method="post">
                 <ul  class="contact-me-form">
                     <li>
                         <h2 class="contact-me-form-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
                     </li>
-                    <li>
-                        <input  class="input-style" type="text" id="name" required="required" name="user_name" placeholder="Full name" maxlength="30">
-                    </li>
-                    <li>
-                        <div class="separator3"></div>
-                    </li>
-                    <li>
-                        <input class="input-style" type="email" id="mail" required="required" name="user_email" placeholder="Email address">
-                    </li>
-                    <li>
-                        <div class="separator3"></div>
-                    </li>
-                    <li>
-                        <textarea class="input-style" id="msg" required="required" name="user_message" placeholder="Enter text here" maxlength="500"></textarea>
-                    </li>
-                    <li>
-                        <button type="submit" class="project-button">
-                            Get in touch
-                        </button>
+                    <li class="input-fields">
+                        <ul >
+                            <li>
+                                <input  class="input-style" type="text" id="name" required="required" name="user_name" placeholder="Full name" maxlength="30">
+                            </li>
+                            <li>
+                                <div class="separator3"></div>
+                            </li>
+                            <li>
+                                <input class="input-style" type="email" id="mail" required="required" name="user_email" placeholder="Email address">
+                            </li>
+                            <li>
+                                <div class="separator3"></div>
+                            </li>
+                            <li>
+                                <textarea class="input-style" id="msg" required="required" name="user_message" placeholder="Enter text here" maxlength="500"></textarea>
+                            </li>
+                            <li>
+                                <button type="submit" class="project-button">
+                                    Get in touch
+                                </button>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </form>
