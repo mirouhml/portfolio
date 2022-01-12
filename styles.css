@@ -384,7 +384,7 @@ ul#information-list {
 
 ul.footer-social-media {
   list-style-type: none;
-  margin: auto;
+  margin: 0 auto 0 auto;
 }
 
 ul.footer-social-media li {
@@ -482,6 +482,7 @@ textarea {
 .footer {
   display: flex;
   flex-direction: column;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -489,7 +490,7 @@ textarea {
   border-bottom: 1px solid #dfe1e6;
   width: 100%;
   margin-top: 136px;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
 }
 
 .desktop-menu {
@@ -706,9 +707,7 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
-    margin-bottom: 131px;
-    margin-right: 141px;
-    margin-left: 141px;
+    margin: 0 280px 131px 141px;
   }
 
   li.information-list-titles {
@@ -726,7 +725,7 @@ textarea {
 
   .contact-me-form-title {
     width: 455px;
-    margin-top: 130px;
+    margin-top: 50px;
     margin-left: 135px;
     text-align: left;
     flex-grow: 1;
