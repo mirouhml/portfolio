@@ -532,6 +532,7 @@ textarea {
   .desktop-menu {
     display: flex;
     list-style: none;
+    margin-right: 52px;
   }
 
   .desktop-menu a {
@@ -555,10 +556,6 @@ textarea {
     font-style: normal;
     font-weight: 100;
     padding: 10px 12px;
-  }
-
-  .mail-icon {
-    margin-right: 52px;
   }
 
   .header-content {
@@ -771,5 +768,13 @@ textarea {
 
   #first-project-button {
     visibility: visible;
+  }
+
+  .project:hover {
+    transform: scale(1.1);
+  }
+
+  .menu-items:hover {
+    transform: scale(1.1);
   }
 }
