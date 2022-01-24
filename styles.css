@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 * {
   margin: 0;
   padding: 0;
@@ -439,10 +440,6 @@ ul.social-media li:hover {
 }
 
 .footer-social-media li img:hover {
-  transform: scale(1.1);
-}
-
-ul.footer-social-media li:hover {
   transform: scale(1.1);
 }
 
