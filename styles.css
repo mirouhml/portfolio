@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  overflow: scroll;
+}
+
 .header-tab {
   background-color: #3c3a39;
   height: 44px;
@@ -15,7 +19,7 @@
 .tab-title {
   color: #fff;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 10px 12px;
   margin: 2px 12px;
   flex-grow: 1;
@@ -24,6 +28,44 @@
 .menu-button {
   padding: 8px;
   margin: 4px;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  background-color: #3c3a39;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.mobile-menu a {
+  color: #fff5e1;
+  font-size: 32px;
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mobile-menu li h4 {
+  margin: 0 108px 15px 40px;
+}
+
+.mobile-menu li hr {
+  margin: 0 24px 24px 24px;
+  border-top: 0;
+}
+
+#close-button {
+  margin: 18px 38px 34px auto;
+  float: right;
 }
 
 .header-content {
@@ -39,7 +81,7 @@
 .header-primary-text {
   color: #ff6b00;
   font-size: 30px;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   line-height: 64px;
   letter-spacing: 0.37px;
   padding: 12px 1px;
@@ -51,7 +93,7 @@
 
 .header-supporting-text {
   color: #fff5e1;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -62,7 +104,7 @@
 }
 
 .header-description {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -94,7 +136,7 @@ ul.social-media li {
 }
 
 #works-section-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
@@ -129,7 +171,7 @@ ul.social-media li {
 }
 
 #featured-project-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -138,7 +180,7 @@ ul.social-media li {
 }
 
 #featured-project-description {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -149,7 +191,7 @@ ul.social-media li {
 ul.featured-project-languages {
   list-style-type: none;
   display: flex;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   gap: 12px;
 }
@@ -165,7 +207,7 @@ ul.featured-project-languages li {
   align-items: center;
   padding: 12px;
   background: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 17px;
   color: #fff;
   border: none;
@@ -207,7 +249,7 @@ ul.projects-container {
 }
 
 ul.projects-container li {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(38, 38, 38, 0.7)), url('src/project-image.png');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(38, 38, 38, 0.7)), url("src/project-image.png");
   background-size: cover;
   margin-top: 24px;
   background-repeat: no-repeat;
@@ -222,7 +264,7 @@ ul.projects-container li {
 }
 
 .project-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -231,7 +273,7 @@ ul.projects-container li {
 }
 
 .project-description {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 24px;
@@ -242,7 +284,7 @@ ul.projects-container li {
 ul.project-languages {
   list-style-type: none;
   display: flex;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   color: #fff;
   font-weight: 500;
@@ -262,7 +304,7 @@ ul.project-languages li {
   align-items: center;
   padding: 12px;
   background: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 17px;
   color: #fff;
   border: none;
@@ -303,14 +345,14 @@ ul.project-languages li {
   padding-top: 120px;
   padding-left: 24px;
   padding-right: 24px;
-  background-image: url('src/illustration-about-me-mobile.svg');
+  background-image: url("src/illustration-about-me-mobile.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
   padding-bottom: 170px;
 }
 
 #about-me-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
@@ -320,7 +362,7 @@ ul.project-languages li {
 }
 
 #about-me-description {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -334,7 +376,7 @@ ul.project-languages li {
   align-items: center;
   padding: 12px;
   background: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 17px;
   color: #fff;
   border: none;
@@ -371,7 +413,7 @@ ul.project-languages li {
 
 ul#information-list {
   list-style-type: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 20;
   font-size: 25px;
@@ -413,7 +455,7 @@ ul#information-list li {
 
 ul.information-list-subitems {
   list-style-type: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -432,7 +474,7 @@ ul.information-list-subitems {
 
 .contact-me-form-title {
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -448,7 +490,7 @@ ul.information-list-subitems {
 
 .input-fields ul {
   list-style-type: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -493,15 +535,15 @@ textarea {
   margin-bottom: 12px;
 }
 
-.desktop-menu {
-  display: none;
-}
-
 .header-social-media-desktop {
   display: none;
 }
 
 @media only screen and (min-width: 1100px) {
+  .mobile-menu {
+    display: none;
+  }
+
   .header-tab {
     background-color: #3c3a39;
     height: 72px;
@@ -516,7 +558,7 @@ textarea {
   }
 
   .tab-title {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     align-self: center;
     margin-left: 154px;
@@ -540,7 +582,7 @@ textarea {
     margin-right: 32px;
     color: #fff;
     font-size: 15px;
-    font-family: 'inter', sans-serif;
+    font-family: "inter", sans-serif;
     font-style: normal;
     font-weight: 100;
     padding: 10px 12px;
@@ -552,7 +594,7 @@ textarea {
     margin-right: 32px;
     color: #fff;
     font-size: 15px;
-    font-family: 'inter', sans-serif;
+    font-family: "inter", sans-serif;
     font-style: normal;
     font-weight: 100;
     padding: 10px 12px;
@@ -673,7 +715,7 @@ textarea {
     padding-top: 0;
     padding-left: 142px;
     padding-right: 24px;
-    background-image: url('src/illustration-about-me-desktop.svg');
+    background-image: url("src/illustration-about-me-desktop.svg");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 40%;
