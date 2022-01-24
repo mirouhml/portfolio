@@ -245,12 +245,7 @@ ul.projects-container {
 }
 
 ul.projects-container li {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.2),
-      rgba(38, 38, 38, 0.7)
-    ),
-    url("src/project-image.png");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(38, 38, 38, 0.7)), url("src/project-image.png");
   background-size: cover;
   margin-top: 24px;
   background-repeat: no-repeat;

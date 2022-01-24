@@ -5,7 +5,3 @@ function openCloseMenu() {
     else 
         x.style.display = "none";
 }
-
-
-
-
