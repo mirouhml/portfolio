@@ -17,7 +17,6 @@
     gtag('config', 'G-HV2JL7ZN8B');
     </script>
     <title>Ammar's portfolio</title>
-    <script src="functions.js"></script>
 </head>
 <body>
     <div class="app-wrap">
@@ -27,7 +26,7 @@
                     Ammar Hamlaoui
                 </h3>
                 <div class="menu-button" >
-                    <a href="javascript:void(0);" onclick="openCloseMenu()">
+                    <a id="onclick-open" href="javascript:void(0);">
                         <img src="src/union.png" alt="Menu icon"/>
                     </a>
                 </div>
@@ -62,12 +61,12 @@
             </div>
             <ul class="mobile-menu">
                 <li>
-                    <a href="javascript:void(0);" onclick="openCloseMenu()">
+                    <a id="onclick-close" href="javascript:void(0);">
                         <img id="close-button" src="src/cancel.svg" alt="Close button">
                     </a>
                 </li>
                 <li>
-                    <a href="#portfolio" onclick="openCloseMenu()">
+                    <a id="onclick-portfolio" href="#portfolio">
                         <h4 class="menu-items">
                             Portfolio
                         </h4>
@@ -75,7 +74,7 @@
                     <hr>
                 </li>
                 <li>
-                    <a href="#about-me" onclick="openCloseMenu()">
+                    <a id="onclick-about" href="#about-me">
                         <h4 class="menu-items">
                             About
                         </h4>
@@ -83,7 +82,7 @@
                     <hr>
                 </li>
                 <li>
-                    <a href="#contact-me" onclick="openCloseMenu()">
+                    <a id="onclick-contact" href="#contact-me">
                         <h4 class="menu-items">
                             Contact me
                         </h4>
@@ -339,5 +338,6 @@
             </ul>
         </div>
     </div>
+    <script src="functions.js"></script>
 </body>
 </html>
