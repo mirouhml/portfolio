@@ -23,6 +23,7 @@ body {
   padding: 10px 12px;
   margin: 2px 12px;
   flex-grow: 1;
+  text-decoration: none;
 }
 
 .menu-button {
@@ -433,6 +434,18 @@ ul.footer-social-media li {
   display: inline;
 }
 
+ul.social-media li:hover {
+  transform: scale(1.1);
+}
+
+.footer-social-media li img:hover {
+  transform: scale(1.1);
+}
+
+ul.footer-social-media li:hover {
+  transform: scale(1.1);
+}
+
 .footer-social-media a {
   color: transparent;
 }
@@ -817,6 +830,10 @@ textarea {
   }
 
   .menu-items:hover {
+    transform: scale(1.1);
+  }
+
+  .header-social-media-desktop li:hover {
     transform: scale(1.1);
   }
 }
