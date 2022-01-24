@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  overflow: scroll;
+}
+
 .header-tab {
   background-color: #3c3a39;
   height: 44px;
