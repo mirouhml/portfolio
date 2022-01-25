@@ -712,6 +712,66 @@ textarea {
     visibility: hidden;
   }
 
+  .project-popup {
+    border: 1px solid #979493;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+    padding: 17px 24px;
+  }
+
+  .project-popup h3 {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    margin-bottom: 12px;
+  }
+
+  .popup-header ul{
+    list-style-type: none;
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #3c3a39;
+    font-weight: 500;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .popup-header li {
+    border: 1px solid #979493;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 12px 10px;
+  }
+
+  .popup-body {
+    display: flex;
+  }
+
+  .popup-body img {
+    margin-right: 25px;
+  }
+
+  .popup-description {
+    display: flex;
+    flex-direction: column;
+  }
+  .popup-body p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: #344563;
+    flex-grow: 1;
+  }
+
   .about-me {
     display: flex;
     flex-direction: column;
