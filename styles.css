@@ -580,8 +580,10 @@ textarea {
   flex-direction: column;
   background-color: #fff;
   width: 60%;
+  height: 80%;
   padding: 17px 24px;
   z-index: 1;
+  overflow: scroll;
 }
 
 .popup-title {
@@ -602,6 +604,7 @@ textarea {
 .popup-header ul {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   color: #3c3a39;
@@ -645,6 +648,17 @@ textarea {
 .popup-buttons {
   display: flex;
   gap: 20px;
+}
+
+#popup-close {
+  position: fixed;
+  cursor: pointer;
+  top: 15px;
+  right: 15px;
+}
+
+#popup-close:hover {
+  background-color: #fff;
 }
 
 @media only screen and (min-width: 1100px) {
