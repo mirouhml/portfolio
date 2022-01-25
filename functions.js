@@ -10,108 +10,134 @@ function openCloseMenu() {
   }
 }
 function addevent(id) {
-  document.getElementById(id).addEventListener('click', function() {
+  document.getElementById(id).addEventListener('click', () => {
     openCloseMenu();
   });
 }
 const ids = ['onclick-open', 'onclick-close', 'onclick-portfolio', 'onclick-about', 'onclick-contact'];
 ids.forEach(addevent);
-
-function createProjectCards(){
-  const projects = {
-    project1: {
-      name: 'Profesional Art Printing Data',
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      featuredImage: '',
-      languages: ['html','bootstrap','Ruby'],
-      linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-      linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\''
-    },
-    project2: {
-      name: 'Profesional Art Printing Data',
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      featuredImage: '',
-      languages: ['html','bootstrap','Ruby'],
-      linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-      linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\''
-    },
-    project3: {
-      name: 'Profesional Art Printing Data',
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      featuredImage: '',
-      languages: ['html','bootstrap','Ruby'],
-      linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-      linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\''
-    },
-    project4: {
-      name: 'Profesional Art Printing Data',
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      featuredImage: '',
-      languages: ['html','bootstrap','Ruby'],
-      linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-      linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\''
-    },
-    project5: {
-      name: 'Profesional Art Printing Data',
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      featuredImage: '',
-      languages: ['html','bootstrap','Ruby'],
-      linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-      linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\''
-    },
-    project6: {
-      name: 'Profesional Art Printing Data',
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      featuredImage: '',
-      languages: ['html','bootstrap','Ruby'],
-      linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-      linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\''
-    }
-  }
-  let i = 0;
-  for (const project in projects){
-    projectCards(projects[project],i);
-    i++;
-  }
-}
-
-function projectCards(project,counter){
-  const projectsContainer = document.querySelector('.projects-container');
-  const listElem = document.createElement('li');
-  listElem.setAttribute('class','project');
-  const projectCard = document.createElement('div');
-  projectCard.setAttribute('class','project-card-content');
-  const projectTitle = document.createElement('h3');
-  projectTitle.setAttribute('class','project-title');
-  projectTitle.appendChild(document.createTextNode(project.name));
-  const projectDescription = document.createElement('p');
-  projectDescription.setAttribute('class','project-description');
-  projectDescription.appendChild(document.createTextNode(project.description))
-  const projectLanguages = document.createElement('ul');
-  projectLanguages.setAttribute('class','project-languages');
-  for (let i=0;i<project.languages.length;i++){
+const projects = {
+  project0: {
+    name: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    featuredImage: 'src/featured-project-image.svg',
+    languages: ['html', 'bootstrap', 'bootstrap', 'Ruby'],
+    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
+    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+  },
+  project1: {
+    name: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    featuredImage: 'src/project-image.svg',
+    languages: ['html', 'bootstrap', 'Ruby'],
+    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
+    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+  },
+  project2: {
+    name: 'Data Dashboard Healthcare',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    featuredImage: 'src/project-image.svg',
+    languages: ['html', 'bootstrap', 'Ruby'],
+    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
+    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+  },
+  project3: {
+    name: 'Website Protfolio',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    featuredImage: 'src/project-image.svg',
+    languages: ['html', 'bootstrap', 'Ruby'],
+    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
+    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+  },
+  project4: {
+    name: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    featuredImage: 'src/project-image.svg',
+    languages: ['html', 'bootstrap', 'Ruby'],
+    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
+    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+  },
+  project5: {
+    name: 'Data Dashboard Healthcare',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    featuredImage: 'src/project-image.svg',
+    languages: ['html', 'bootstrap', 'Ruby'],
+    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
+    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+  },
+  project6: {
+    name: 'Website Protfolio',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    featuredImage: 'src/project-image.svg',
+    languages: ['html', 'bootstrap', 'Ruby'],
+    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
+    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+  },
+};
+function createPopupWindow(project) {
+  const popupTitle = document.getElementById('popup-title');
+  popupTitle.textContent = project.name;
+  const popupLanguages = document.getElementById('popup-languages');
+  popupLanguages.innerHTML = '';
+  for (let i = 0; i < project.languages.length; i += 1) {
     const language = document.createElement('li');
     const languageText = document.createTextNode(project.languages[i]);
     language.appendChild(languageText);
-    projectLanguages.appendChild(language);
+    popupLanguages.appendChild(language);
   }
-  const projectButton = document.createElement('button');
-  projectButton.setAttribute('onclick',project.linkLive);
-  projectButton.setAttribute('class','project-button');
-  projectButton.setAttribute('type','button');
-  projectButton.appendChild(document.createTextNode('See Project'));
-  projectCard.appendChild(projectTitle);
-  projectCard.appendChild(projectDescription);
-  projectCard.appendChild(projectLanguages);
-  if (counter == 0){
-    projectButton.setAttribute('id','first-project-button');
-    listElem.setAttribute('id','project1');
+  const popupImage = document.getElementById('popup-image');
+  popupImage.setAttribute('src', project.featuredImage);
+  const popupDescription = document.getElementById('popup-description-text');
+  popupDescription.textContent = project.description;
+  const liveButton = document.getElementById('live-button');
+  liveButton.setAttribute('onclick', project.linkLive);
+  const sourceButton = document.getElementById('source-button');
+  sourceButton.setAttribute('onclick', project.linkSource);
+}
+function openClosePopup() {
+  const x = document.querySelector('.project-popup');
+  if (x.style.display === 'flex') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'flex';
   }
-  listElem.appendChild(projectCard);
-  listElem.appendChild(projectButton);
+}
+function projectCards(project, counter) {
+  let projectLanguages = '';
+  for (let i = 0; i < project.languages.length; i += 1) {
+    projectLanguages += `<li>${project.languages[i]}</li>`;
+  }
+  const listElem = document.createElement('li');
+  listElem.classList.add('project');
+  listElem.id = `project${counter}`;
+  if (project.featuredImage) {
+    listElem.style.setProperty('--background-img', `url(${project.featuredImage})`);
+  }
+  listElem.innerHTML = `<div class="project-card-content">
+                  <h3 class="project-title">${project.name}</h3>
+                  <p class="project-description">${project.description}</p>
+                  <ul class="project-languages">${projectLanguages}</ul>
+                </div>
+                <button class="project-button" id="project-button-${counter}" type="button">See Project</button>`;
+  const projectsContainer = document.querySelector('.projects-container');
+  listElem.querySelector('.project-button').addEventListener('click', () => {
+    openClosePopup();
+    createPopupWindow(projects[`project${counter}`]);
+  });
   projectsContainer.appendChild(listElem);
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-  createProjectCards();
+function createProjectCards(projectList) {
+  for (let i = 0; i < projectList.length; i += 1) {
+    if (i > 0) { projectCards(projectList[i], i); }
+  }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  createProjectCards(Object.values(projects));
+});
+document.getElementById('featured-button').addEventListener('click', () => {
+  openClosePopup();
+  createPopupWindow(projects.project0);
+});
+document.getElementById('popup-close').addEventListener('click', () => {
+  openClosePopup();
 });
