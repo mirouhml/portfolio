@@ -4,8 +4,18 @@
   padding: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   overflow: scroll;
+}
+
+button {
+  cursor: pointer;
 }
 
 .header-tab {
@@ -238,7 +248,7 @@ ul.featured-project-languages li {
   border: none;
 }
 
-ul.projects-container {
+.projects-container {
   list-style-type: none;
   display: grid;
   grid-template-columns: 100%;
@@ -248,13 +258,22 @@ ul.projects-container {
   margin-right: 24px;
   margin-bottom: 120px;
   grid-gap: 24px;
+  flex-grow: 1;
 }
 
-ul.projects-container li {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(38, 38, 38, 0.7)), url("src/project-image.png");
+.project {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(38, 38, 38, 0.7)), var(--background-img, url("src/project-image.png"));
   background-size: cover;
   margin-top: 24px;
   background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.project,
+.project-card-content {
+  transition: 300ms ease-in-out;
 }
 
 .project-card-content {
@@ -263,6 +282,7 @@ ul.projects-container li {
   padding-top: 84px;
   padding-left: 16px;
   padding-right: 16px;
+  flex-grow: 1;
 }
 
 .project-title {
@@ -301,7 +321,7 @@ ul.project-languages li {
   padding: 12px 10px;
 }
 
-.project-button:enabled {
+.project-button {
   margin-top: 22px;
   align-items: center;
   padding: 12px;
@@ -309,8 +329,8 @@ ul.project-languages li {
   font-family: "Inter", sans-serif;
   font-size: 17px;
   color: #fff;
-  border: none;
   width: 100%;
+  border: 1px solid #f55800;
 }
 
 .project-button:hover {
@@ -549,9 +569,111 @@ textarea {
   display: none;
 }
 
+.project-popup {
+  border: 1px solid #979493;
+  display: none;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  background-color: #fff;
+  width: 60%;
+  height: 80%;
+  padding: 17px 24px;
+  z-index: 1;
+  overflow: scroll;
+}
+
+.popup-title {
+  display: flex;
+}
+
+.popup-title h3 {
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 12px;
+  flex-grow: 1;
+}
+
+.popup-header ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #3c3a39;
+  font-weight: 500;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.popup-header li {
+  border: 1px solid #979493;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 12px 10px;
+}
+
+.popup-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-body img {
+  margin-right: 25px;
+  width: 100%;
+}
+
+.popup-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-body p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 30px;
+  color: #344563;
+  flex-grow: 1;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+#popup-close {
+  position: fixed;
+  cursor: pointer;
+  top: 15px;
+  right: 15px;
+}
+
+#popup-close:hover {
+  background-color: #fff;
+}
+
 @media only screen and (min-width: 1100px) {
   .mobile-menu {
     display: none;
+  }
+
+  .popup-body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup-body img {
+    margin-right: 25px;
+    width: 60%;
   }
 
   .header-tab {
@@ -708,8 +830,10 @@ textarea {
     margin-bottom: 16px;
   }
 
-  .project-button:enabled {
-    visibility: hidden;
+  .project-button {
+    transform: translateY(calc(100% + 10px));
+    opacity: 0;
+    transition: 300ms ease-in-out;
   }
 
   .about-me {
@@ -809,21 +933,20 @@ textarea {
     margin-bottom: 24px;
   }
 
-  #project1 div {
-    visibility: hidden;
-  }
-
-  #project1 {
-    background-image: url(src/project-image.svg);
-    border: 2px solid black;
-  }
-
-  #first-project-button {
-    visibility: visible;
-  }
-
   .project:hover {
     transform: scale(1.1);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px 0 #532c0a73;
+    background-image: var(--background-img, url("src/project-image.png"));
+  }
+
+  .project:hover .project-button {
+    transform: none;
+    opacity: 1;
+  }
+
+  .project:hover .project-card-content {
+    opacity: 0;
   }
 
   .menu-items:hover {
