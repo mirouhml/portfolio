@@ -251,7 +251,12 @@ ul.projects-container {
 }
 
 ul.projects-container li {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(38, 38, 38, 0.7)), url("src/project-image.png");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(38, 38, 38, 0.7)
+    ),
+    url("src/project-image.png");
   background-size: cover;
   margin-top: 24px;
   background-repeat: no-repeat;
@@ -717,9 +722,10 @@ textarea {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    width: 60%;
+    width: 70%;
     height: 100%;
     padding: 17px 24px;
+    margin: auto;
   }
 
   .project-popup h3 {
@@ -732,7 +738,7 @@ textarea {
     margin-bottom: 12px;
   }
 
-  .popup-header ul{
+  .popup-header ul {
     list-style-type: none;
     display: flex;
     font-family: "Inter", sans-serif;
