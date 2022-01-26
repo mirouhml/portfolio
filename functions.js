@@ -148,9 +148,8 @@ document.getElementById('featured-button').addEventListener('click', () => {
 document.getElementById('popup-close').addEventListener('click', () => {
   openClosePopup();
 });
-
-function validateEmail(email,error,event){
- if (email != email.toLowerCase()){
+function validateEmail(email, error, event) {
+  if (email !== email.toLowerCase()) {
     event.preventDefault();
     const msg = document.getElementById('error-message');
     msg.innerText = error;
@@ -158,12 +157,11 @@ function validateEmail(email,error,event){
     msg.style.fontSize = '12px';
   }
 }
-const form  = document.getElementById('contact-me-form');
+const form = document.getElementById('contact-me-form');
 form.addEventListener('submit', (event) => {
   // handle the form data
-  const EMAIL_INVALID = "Please enter an email address without any upper-case letters.";
-  const email = form.elements['mail'];
+  const EMAIL_INVALID = 'Please enter an email address without any upper-case letters.';
+  const email = form.elements.mail;
   const emailText = email.value;
-  validateEmail(emailText,EMAIL_INVALID,event);
+  validateEmail(emailText, EMAIL_INVALID, event);
 });
-
