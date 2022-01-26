@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="src/portfolio-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
@@ -119,7 +120,7 @@
                     <h2>I'm a Software Developer</h2>
                 </div>
                 <div class="header-description">
-                    <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+                    <p>I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
                 </div>
             </div>
             <div class="header-social-media">
@@ -162,7 +163,7 @@
                 </div>
             </div>
             <ul class="projects-container"></ul>
-            <div class="popup">
+            <div id="popup-window" class="popup">
                 <div class="project-popup">
                     <div class="popup-header">
                         <div class="popup-title">
@@ -192,7 +193,7 @@
         <section class="about-me" id="about-me">
             <div id="about-me-content">
                 <h2 id="about-me-title">About me</h2>
-                <p id="about-me-description">Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+                <p id="about-me-description">Hello I'm a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
                 <button class="about-me-button" type="button">Get My Resume</button>
             </div>
             <div id="separator2"></div>
@@ -238,7 +239,7 @@
             </ul>
         </section>
         <section class="contact-me" id="contact-me">
-            <form action="https://formspree.io/f/xdobkqjy" method="post">
+            <form action="https://formspree.io/f/xdobkqjy" id="contact-me-form" method="post">
                 <ul  class="contact-me-form">
                     <li>
                         <h2 class="contact-me-form-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
@@ -259,6 +260,9 @@
                             </li>
                             <li>
                                 <textarea class="input-style" id="msg" required="required" name="user_message" placeholder="Enter text here" maxlength="500"></textarea>
+                            </li>
+                            <li>
+                                <small id="error-message"></small>
                             </li>
                             <li>
                                 <button type="submit" class="featured-project-button">

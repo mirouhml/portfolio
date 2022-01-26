@@ -28,7 +28,7 @@ const projects = {
   },
   project1: {
     name: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: 'src/project-image.svg',
     languages: ['html', 'bootstrap', 'Ruby'],
@@ -37,16 +37,16 @@ const projects = {
   },
   project2: {
     name: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: 'src/project-image.svg',
-    languages: ['html', 'bootstrap', 'Ruby'],
+    languages: ['html', 'bootstrap', 'Ruby', 'css'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
   },
   project3: {
     name: 'Website Protfolio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: 'src/project-image.svg',
     languages: ['html', 'bootstrap', 'Ruby'],
@@ -55,7 +55,7 @@ const projects = {
   },
   project4: {
     name: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: 'src/project-image.svg',
     languages: ['html', 'bootstrap', 'Ruby'],
@@ -64,7 +64,7 @@ const projects = {
   },
   project5: {
     name: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: 'src/project-image.svg',
     languages: ['html', 'bootstrap', 'Ruby'],
@@ -73,7 +73,7 @@ const projects = {
   },
   project6: {
     name: 'Website Protfolio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: 'src/project-image.svg',
     languages: ['html', 'bootstrap', 'Ruby'],
@@ -147,4 +147,20 @@ document.getElementById('featured-button').addEventListener('click', () => {
 });
 document.getElementById('popup-close').addEventListener('click', () => {
   openClosePopup();
+});
+function validateEmail(email, error, event) {
+  if (email !== email.toLowerCase()) {
+    event.preventDefault();
+    const msg = document.getElementById('error-message');
+    msg.innerText = error;
+    msg.style.color = 'red';
+    msg.style.fontSize = '12px';
+  }
+}
+const form = document.getElementById('contact-me-form');
+form.addEventListener('submit', (event) => {
+  const EMAIL_INVALID = 'Please enter an email address without any upper-case letters.';
+  const email = form.elements.mail;
+  const emailText = email.value;
+  validateEmail(emailText, EMAIL_INVALID, event);
 });
