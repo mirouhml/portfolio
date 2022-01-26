@@ -239,7 +239,7 @@
             </ul>
         </section>
         <section class="contact-me" id="contact-me">
-            <form action="https://formspree.io/f/xdobkqjy" method="post">
+            <form action="https://formspree.io/f/xdobkqjy" id="contact-me-form" method="post">
                 <ul  class="contact-me-form">
                     <li>
                         <h2 class="contact-me-form-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
@@ -260,6 +260,9 @@
                             </li>
                             <li>
                                 <textarea class="input-style" id="msg" required="required" name="user_message" placeholder="Enter text here" maxlength="500"></textarea>
+                            </li>
+                            <li>
+                                <small id="error-message"></small>
                             </li>
                             <li>
                                 <button type="submit" class="featured-project-button">

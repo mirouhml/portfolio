@@ -148,4 +148,17 @@ document.getElementById('featured-button').addEventListener('click', () => {
 document.getElementById('popup-close').addEventListener('click', () => {
   openClosePopup();
 });
-
+const form  = document.getElementById('contact-me-form');
+form.addEventListener('submit', (event) => {
+  // handle the form data
+  const EMAIL_INVALID = "Please enter an email address without any upper-case letters.";
+  const email = form.elements['mail'];
+  const emailText = email.value;
+  if (emailText != emailText.toLowerCase()){
+    event.preventDefault();
+    const msg = document.getElementById('error-message');
+    msg.innerText = EMAIL_INVALID;
+    msg.style.color = 'red';
+    msg.style.fontSize = '12px';
+  }
+});
