@@ -159,7 +159,6 @@ function validateEmail(email, error, event) {
 }
 const form = document.getElementById('contact-me-form');
 form.addEventListener('submit', (event) => {
-  // handle the form data
   const EMAIL_INVALID = 'Please enter an email address without any upper-case letters.';
   const email = form.elements.mail;
   const emailText = email.value;
