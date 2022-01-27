@@ -181,6 +181,9 @@ form.addEventListener('input', () => {
 });
 document.addEventListener('DOMContentLoaded', () => {
   createProjectCards(Object.values(projects));
+  if(localStorage.getItem('formText')) {
+    fillForm();
+  }
 });
 document.getElementById('featured-button').addEventListener('click', () => {
   openClosePopup();
