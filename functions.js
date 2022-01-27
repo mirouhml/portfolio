@@ -138,16 +138,6 @@ function createProjectCards(projectList) {
     if (i > 0) { projectCards(projectList[i], i); }
   }
 }
-document.addEventListener('DOMContentLoaded', () => {
-  createProjectCards(Object.values(projects));
-});
-document.getElementById('featured-button').addEventListener('click', () => {
-  openClosePopup();
-  createPopupWindow(projects.project0);
-});
-document.getElementById('popup-close').addEventListener('click', () => {
-  openClosePopup();
-});
 function validateEmail(email, error, event) {
   if (email !== email.toLowerCase()) {
     event.preventDefault();
@@ -163,4 +153,41 @@ form.addEventListener('submit', (event) => {
   const email = form.elements.mail;
   const emailText = email.value;
   validateEmail(emailText, EMAIL_INVALID, event);
+});
+function populateStorage(formText) {
+  localStorage.setItem('formText', formText);
+}
+function fillForm() {
+  const data = JSON.parse(localStorage.getItem('formText'));
+  const { name } = form.elements;
+  const email = form.elements.mail;
+  const message = form.elements.msg;
+  name.value = data.name;
+  email.value = data.email;
+  message.value = data.message;
+}
+form.addEventListener('input', () => {
+  const name = form.elements.name.value;
+  const email = form.elements.mail.value;
+  const message = form.elements.msg.value;
+
+  const formText = {
+    name,
+    email,
+    message,
+  };
+  populateStorage(JSON.stringify(formText));
+});
+document.addEventListener('DOMContentLoaded', () => {
+  createProjectCards(Object.values(projects));
+  if (localStorage.getItem('formText')) {
+    fillForm();
+  }
+});
+document.getElementById('featured-button').addEventListener('click', () => {
+  openClosePopup();
+  createPopupWindow(projects.project0);
+});
+document.getElementById('popup-close').addEventListener('click', () => {
+  openClosePopup();
 });

@@ -589,7 +589,7 @@ textarea {
   height: 80%;
   padding: 17px 24px;
   z-index: 1;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .popup-title {
