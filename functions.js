@@ -155,11 +155,11 @@ form.addEventListener('submit', (event) => {
   validateEmail(emailText, EMAIL_INVALID, event);
 });
 function populateStorage(formText) {
-  localStorage.setItem('formText',formText);
+  localStorage.setItem('formText', formText);
 }
-function fillForm(){
+function fillForm() {
   const data = JSON.parse(localStorage.getItem('formText'));
-  const name = form.elements.name;
+  const { name } = form.elements;
   const email = form.elements.mail;
   const message = form.elements.msg;
   name.value = data.name;
@@ -172,16 +172,16 @@ form.addEventListener('input', () => {
   const email = form.elements.mail.value;
   const message = form.elements.msg.value;
 
-  let formText = {
-    name: name,
-    email: email,
-    message: message
-  }
+  const formText = {
+    name,
+    email,
+    message,
+  };
   populateStorage(JSON.stringify(formText));
 });
 document.addEventListener('DOMContentLoaded', () => {
   createProjectCards(Object.values(projects));
-  if(localStorage.getItem('formText')) {
+  if (localStorage.getItem('formText')) {
     fillForm();
   }
 });
