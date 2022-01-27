@@ -157,6 +157,16 @@ form.addEventListener('submit', (event) => {
 function populateStorage(formText) {
   localStorage.setItem('formText',formText);
 }
+function fillForm(){
+  const data = JSON.parse(localStorage.getItem('formText'));
+  const name = form.elements.name;
+  const email = form.elements.mail;
+  const message = form.elements.msg;
+  name.value = data.name;
+  email.value = data.email;
+  message.value = data.message;
+}
+
 form.addEventListener('input', () => {
   const name = form.elements.name.value;
   const email = form.elements.mail.value;
