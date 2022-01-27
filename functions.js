@@ -166,7 +166,6 @@ function fillForm() {
   email.value = data.email;
   message.value = data.message;
 }
-
 form.addEventListener('input', () => {
   const name = form.elements.name.value;
   const email = form.elements.mail.value;
