@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://mirouhml.github.io/portfolio/index.html)
+[Live Demo Link](https://mirouhml.github.io/portfolio/)
 
 ## Built With
 
