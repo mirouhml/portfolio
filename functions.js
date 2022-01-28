@@ -25,7 +25,7 @@ const projects = {
     languages: ['html', 'bootstrap', 'Ruby'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
-    type: 'normal'
+    type: 'normal',
   },
   project1: {
     name: 'Data Dashboard Healthcare',
@@ -35,7 +35,7 @@ const projects = {
     languages: ['html', 'bootstrap', 'Ruby', 'css'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
-    type: 'normal'
+    type: 'normal',
   },
   project2: {
     name: 'Website Protfolio',
@@ -45,7 +45,7 @@ const projects = {
     languages: ['html', 'bootstrap', 'Ruby'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
-    type: 'normal'
+    type: 'normal',
   },
   project3: {
     name: 'Profesional Art Printing Data',
@@ -55,7 +55,7 @@ const projects = {
     languages: ['html', 'bootstrap', 'Ruby'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
-    type: 'normal'
+    type: 'normal',
   },
   project4: {
     name: 'Data Dashboard Healthcare',
@@ -65,7 +65,7 @@ const projects = {
     languages: ['html', 'bootstrap', 'Ruby'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
-    type: 'normal'
+    type: 'normal',
   },
   project5: {
     name: 'Website Protfolio',
@@ -75,7 +75,7 @@ const projects = {
     languages: ['html', 'bootstrap', 'Ruby'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
-    type: 'normal'
+    type: 'normal',
   },
   project6: {
     name: 'Multi-Post Stories',
@@ -85,27 +85,9 @@ const projects = {
     languages: ['html', 'bootstrap', 'bootstrap', 'Ruby'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
-    type: 'featured'
-  }
+    type: 'featured',
+  },
 };
-function createFeaturedProject(project) {
-  let featuredProjectContainer = document.getElementById('featured-project');
-  let projectLanguages = '';
-  for (let i = 0; i < project.languages.length; i += 1) {
-    projectLanguages += `<li>${project.languages[i]}</li>`;
-  }
-  featuredProjectContainer.innerHTML = `<img id="featured-project-image" alt="Featured project image" src="${project.featuredImage}">
-                              <div id="featured-project-details">
-                                  <h3 id="featured-project-title">${project.name}</h3>
-                                  <p id="featured-project-description">${project.description}</p>
-                                  <ul class="featured-project-languages">${projectLanguages}</ul>
-                                  <button class="featured-project-button" id="featured-button" type="button">See Project</button>
-                              </div>`;
-  document.getElementById('featured-button').addEventListener('click', () => {
-    openClosePopup();
-    createPopupWindow(projects.project0);
-  });
-}
 function createPopupWindow(project) {
   const popupTitle = document.getElementById('popup-title');
   popupTitle.textContent = project.name;
@@ -134,6 +116,24 @@ function openClosePopup() {
     x.style.display = 'flex';
   }
 }
+function createFeaturedProject(project) {
+  const featuredProjectContainer = document.getElementById('featured-project');
+  let projectLanguages = '';
+  for (let i = 0; i < project.languages.length; i += 1) {
+    projectLanguages += `<li>${project.languages[i]}</li>`;
+  }
+  featuredProjectContainer.innerHTML = `<img id="featured-project-image" alt="Featured project image" src="${project.featuredImage}">
+                              <div id="featured-project-details">
+                                  <h3 id="featured-project-title">${project.name}</h3>
+                                  <p id="featured-project-description">${project.description}</p>
+                                  <ul class="featured-project-languages">${projectLanguages}</ul>
+                                  <button class="featured-project-button" id="featured-button" type="button">See Project</button>
+                              </div>`;
+  document.getElementById('featured-button').addEventListener('click', () => {
+    openClosePopup();
+    createPopupWindow(projects.project0);
+  });
+}
 function projectCards(project, counter) {
   let projectLanguages = '';
   for (let i = 0; i < project.languages.length; i += 1) {
@@ -160,10 +160,7 @@ function projectCards(project, counter) {
 }
 function createProjectCards(projectList) {
   for (let i = 0; i < projectList.length; i += 1) {
-    if (projectList[i].type === 'normal')
-      projectCards(projectList[i], i);
-    else
-      createFeaturedProject(projectList[i]);
+    if (projectList[i].type === 'normal') { projectCards(projectList[i], i); } else { createFeaturedProject(projectList[i]); }
   }
 }
 function validateEmail(email, error, event) {
