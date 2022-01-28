@@ -117,7 +117,7 @@ function openClosePopup() {
   }
 }
 function createFeaturedProject(project) {
-  const featuredProjectContainer = document.getElementById('featured-project');
+  const featuredProjectContainer = document.getElementById('#featured-project');
   let projectLanguages = '';
   for (let i = 0; i < project.languages.length; i += 1) {
     projectLanguages += `<li>${project.languages[i]}</li>`;
@@ -131,7 +131,7 @@ function createFeaturedProject(project) {
                               </div>`;
   document.getElementById('featured-button').addEventListener('click', () => {
     openClosePopup();
-    createPopupWindow(project);
+    CreatePopupWindow(project);
   });
 }
 function projectCards(project, counter) {
