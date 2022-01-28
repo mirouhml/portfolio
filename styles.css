@@ -177,6 +177,7 @@ ul.social-media li {
   flex-direction: column;
   margin-right: 24px;
   margin-left: 24px;
+  height: fit-content;
 }
 
 #featured-project-image {
@@ -271,6 +272,7 @@ ul.social-media li {
   flex-direction: column;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(38, 38, 38, 0.7)), var(--background-img, url("src/project-image.png"));
   background-size: cover;
+  background-position: center;
   margin-top: 24px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -808,8 +810,9 @@ textarea {
   }
 
   #featured-project {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 45% 50%;
+    gap: 20px;
     margin-right: 142px;
     margin-left: 142px;
     margin-bottom: 24px;
