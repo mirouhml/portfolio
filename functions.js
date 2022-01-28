@@ -131,7 +131,7 @@ function createFeaturedProject(project) {
                               </div>`;
   document.getElementById('featured-button').addEventListener('click', () => {
     openClosePopup();
-    createPopupWindow(projects.project0);
+    createPopupWindow(project);
   });
 }
 function projectCards(project, counter) {
