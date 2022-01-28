@@ -18,15 +18,6 @@ const ids = ['onclick-open', 'onclick-close', 'onclick-portfolio', 'onclick-abou
 ids.forEach(addevent);
 const projects = {
   project0: {
-    name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-    featuredImage: 'src/featured-project-image.svg',
-    languages: ['html', 'bootstrap', 'bootstrap', 'Ruby'],
-    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
-  },
-  project1: {
     name: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -34,8 +25,9 @@ const projects = {
     languages: ['html', 'bootstrap', 'Ruby'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+    type: 'normal',
   },
-  project2: {
+  project1: {
     name: 'Data Dashboard Healthcare',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -43,8 +35,9 @@ const projects = {
     languages: ['html', 'bootstrap', 'Ruby', 'css'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+    type: 'normal',
   },
-  project3: {
+  project2: {
     name: 'Website Protfolio',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -52,8 +45,9 @@ const projects = {
     languages: ['html', 'bootstrap', 'Ruby'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+    type: 'normal',
   },
-  project4: {
+  project3: {
     name: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -61,8 +55,9 @@ const projects = {
     languages: ['html', 'bootstrap', 'Ruby'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+    type: 'normal',
   },
-  project5: {
+  project4: {
     name: 'Data Dashboard Healthcare',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -70,8 +65,9 @@ const projects = {
     languages: ['html', 'bootstrap', 'Ruby'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+    type: 'normal',
   },
-  project6: {
+  project5: {
     name: 'Website Protfolio',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -79,6 +75,17 @@ const projects = {
     languages: ['html', 'bootstrap', 'Ruby'],
     linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
     linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+    type: 'normal',
+  },
+  project6: {
+    name: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    featuredImage: 'src/featured-project-image.svg',
+    languages: ['html', 'bootstrap', 'bootstrap', 'Ruby'],
+    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
+    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+    type: 'featured',
   },
 };
 function createPopupWindow(project) {
@@ -109,6 +116,24 @@ function openClosePopup() {
     x.style.display = 'flex';
   }
 }
+function createFeaturedProject(project) {
+  const featuredProjectContainer = document.getElementById('featured-project');
+  let projectLanguages = '';
+  for (let i = 0; i < project.languages.length; i += 1) {
+    projectLanguages += `<li>${project.languages[i]}</li>`;
+  }
+  featuredProjectContainer.innerHTML = `<img id="featured-project-image" alt="Featured project image" src="${project.featuredImage}">
+                              <div id="featured-project-details">
+                                  <h3 id="featured-project-title">${project.name}</h3>
+                                  <p id="featured-project-description">${project.description}</p>
+                                  <ul class="featured-project-languages">${projectLanguages}</ul>
+                                  <button class="featured-project-button" id="featured-button" type="button">See Project</button>
+                              </div>`;
+  document.getElementById('featured-button').addEventListener('click', () => {
+    openClosePopup();
+    createPopupWindow(projects.project0);
+  });
+}
 function projectCards(project, counter) {
   let projectLanguages = '';
   for (let i = 0; i < project.languages.length; i += 1) {
@@ -135,7 +160,7 @@ function projectCards(project, counter) {
 }
 function createProjectCards(projectList) {
   for (let i = 0; i < projectList.length; i += 1) {
-    if (i > 0) { projectCards(projectList[i], i); }
+    if (projectList[i].type === 'normal') { projectCards(projectList[i], i); } else { createFeaturedProject(projectList[i]); }
   }
 }
 function validateEmail(email, error, event) {
@@ -183,10 +208,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('formText')) {
     fillForm();
   }
-});
-document.getElementById('featured-button').addEventListener('click', () => {
-  openClosePopup();
-  createPopupWindow(projects.project0);
 });
 document.getElementById('popup-close').addEventListener('click', () => {
   openClosePopup();
