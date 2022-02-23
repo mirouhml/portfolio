@@ -18,14 +18,14 @@ const ids = ['onclick-open', 'onclick-close', 'onclick-portfolio', 'onclick-abou
 ids.forEach(addevent);
 const projects = {
   project0: {
-    name: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-    featuredImage: 'src/project-image.svg',
-    languages: ['html', 'bootstrap', 'Ruby'],
-    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
-    type: 'normal',
+    name: 'Creative Anime Convention',
+    description: 'Creative Anime Convetion 2022 is the gathering of everything anime and otaku culture, celebrating the many aspects of Japanese pop culture and its influence on the world,taking place in Algeria.',
+    longDescription: 'Creative Anime Convention or CAC offers tons of fun and educational workshops, live conferences from big and influential figures of the anime industry, new anime series and movies announcements, trailers and exclusive debut screenings, live concerts and musical performances, and many more events awaiting you across 3 days from Thursday, February 24th to Saturday, February 26th, 2022 in Sahat Chouhada, Algeirs, Algeria.',
+    featuredImage: 'src/cac.png',
+    languages: ['html', 'css', 'scss', 'JavaScript'],
+    linkLive: 'https://mirouhml.github.io/anime-convention-project',
+    linkSource: 'https://github.com/mirouhml/anime-convention-project',
+    type: 'featured',
   },
   project1: {
     name: 'Data Dashboard Healthcare',
@@ -33,8 +33,8 @@ const projects = {
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: 'src/project-image.svg',
     languages: ['html', 'bootstrap', 'Ruby', 'css'],
-    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+    linkLive: 'https://mirouhml.github.io/portfolio/index.html',
+    linkSource: 'https://github.com/mirouhml/portfolio',
     type: 'normal',
   },
   project2: {
@@ -43,8 +43,8 @@ const projects = {
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: 'src/project-image.svg',
     languages: ['html', 'bootstrap', 'Ruby'],
-    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+    linkLive: 'https://mirouhml.github.io/portfolio/index.html',
+    linkSource: 'https://github.com/mirouhml/portfolio',
     type: 'normal',
   },
   project3: {
@@ -53,8 +53,8 @@ const projects = {
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: 'src/project-image.svg',
     languages: ['html', 'bootstrap', 'Ruby'],
-    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+    linkLive: 'https://mirouhml.github.io/portfolio/index.html',
+    linkSource: 'https://github.com/mirouhml/portfolio',
     type: 'normal',
   },
   project4: {
@@ -63,8 +63,8 @@ const projects = {
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: 'src/project-image.svg',
     languages: ['html', 'bootstrap', 'Ruby'],
-    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+    linkLive: 'https://mirouhml.github.io/portfolio/index.html',
+    linkSource: 'https://github.com/mirouhml/portfolio',
     type: 'normal',
   },
   project5: {
@@ -73,8 +73,8 @@ const projects = {
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: 'src/project-image.svg',
     languages: ['html', 'bootstrap', 'Ruby'],
-    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
+    linkLive: 'https://mirouhml.github.io/portfolio/index.html',
+    linkSource: 'https://github.com/mirouhml/portfolio',
     type: 'normal',
   },
   project6: {
@@ -83,9 +83,9 @@ const projects = {
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: 'src/featured-project-image.svg',
     languages: ['html', 'bootstrap', 'bootstrap', 'Ruby'],
-    linkLive: 'location.href=\'https://mirouhml.github.io/portfolio/index.html\'',
-    linkSource: 'location.href=\'https://github.com/mirouhml/portfolio\'',
-    type: 'featured',
+    linkLive: 'https://mirouhml.github.io/portfolio/index.html',
+    linkSource: 'https://github.com/mirouhml/portfolio',
+    type: 'normal',
   },
 };
 function createPopupWindow(project) {
@@ -104,9 +104,11 @@ function createPopupWindow(project) {
   const popupDescription = document.getElementById('popup-description-text');
   popupDescription.textContent = project.longDescription;
   const liveButton = document.getElementById('live-button');
-  liveButton.setAttribute('onclick', project.linkLive);
+  const linkLive = `window.open('${project.linkLive}', '_blank')`;
+  liveButton.setAttribute('onclick', linkLive);
   const sourceButton = document.getElementById('source-button');
-  sourceButton.setAttribute('onclick', project.linkSource);
+  const linkSource = `window.open('${project.linkSource}', '_blank')`;
+  sourceButton.setAttribute('onclick', linkSource);
 }
 function openClosePopup() {
   const x = document.querySelector('.project-popup');
