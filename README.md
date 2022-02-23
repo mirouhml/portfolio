@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> This an implementation of a portfolio.
+This is my personal portfolio where I will be adding new projects as I finish them, you can find information about me there as well as my projects and the technologies I use, and also you can reach out to me through the contact me form in the website.
 
 ![screenshot](./src/desktop-screenshot.png)
 
