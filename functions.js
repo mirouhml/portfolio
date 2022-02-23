@@ -104,10 +104,10 @@ function createPopupWindow(project) {
   const popupDescription = document.getElementById('popup-description-text');
   popupDescription.textContent = project.longDescription;
   const liveButton = document.getElementById('live-button');
-  const linkLive = `window.open(\'${project.linkLive}\', \'_blank\')`;
+  const linkLive = `window.open('${project.linkLive}', '_blank')`;
   liveButton.setAttribute('onclick', linkLive);
   const sourceButton = document.getElementById('source-button');
-  const linkSource = `window.open(\'${project.linkSource}\', \'_blank\')`;
+  const linkSource = `window.open('${project.linkSource}', '_blank')`;
   sourceButton.setAttribute('onclick', linkSource);
 }
 function openClosePopup() {
