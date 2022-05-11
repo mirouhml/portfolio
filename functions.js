@@ -41,7 +41,7 @@ const projects = {
     name: 'Covid-19 Tracker',
     description: 'Covid-19 Treacker for all countries of the world.',
     longDescription: 'This is a website that shows recent and old data of Covid-19 stats for all the countries of the world, it uses a universal API as the data source.',
-    featuredImage: 'https://user-images.githubusercontent.com/20567503/167961710-3e9bf254-27de-4ba4-98d6-dc633fc7fc68.png',
+    featuredImage: 'https://user-images.githubusercontent.com/20567503/167962932-1af6fbbf-5623-434d-a5e7-3adfcbc8e50d.png',
     languages: ['React', 'Redux', 'CSS'],
     linkLive: 'https://github.com/mirouhml/covid-19-tracker',
     linkSource: 'https://github.com/mirouhml/covid-19-tracker',
