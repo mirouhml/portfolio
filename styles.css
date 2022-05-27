@@ -269,7 +269,7 @@ ul.social-media li {
 .project {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(38, 38, 38, 0.7)), var(--background-img, url("src/project-image.png"));
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(38, 38, 38, 0.9)), var(--background-img, url("src/project-image.png"));
   background-size: cover;
   background-position: center;
   margin-top: 24px;
