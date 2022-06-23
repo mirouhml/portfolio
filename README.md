@@ -8,7 +8,7 @@ This is my personal portfolio where I will be adding new projects as I finish th
 
 ## Live Demo
 
-No link yet.
+[Live Demo Link](https://mirouhml.github.io/portfolio/)
 
 ## Built With
 
