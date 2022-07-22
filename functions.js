@@ -17,6 +17,26 @@ function addevent(id) {
 const ids = ['onclick-open', 'onclick-close', 'onclick-portfolio', 'onclick-about', 'onclick-contact'];
 ids.forEach(addevent);
 const projects = {
+  project5: {
+    name: 'Budget Rails',
+    description: 'Budget Rails is a budgeting app.',
+    longDescription: 'Budget Rails is a budgeting app, it will allow you to create a budget, and track your expenses, and see how you are doing, and how you are spending your money, and you can also categorize your transactions and see how you are spending your money by category.',
+    featuredImage: 'https://user-images.githubusercontent.com/20567503/180420600-9cbcaf9e-96c8-45de-ba5f-3eae61194ef0.png',
+    languages: ['Ruby on Rails', 'PostgreSQL', 'TailwindCSS'],
+    linkLive: 'https://mirouhml-budget-rails.herokuapp.com/',
+    linkSource: 'https://github.com/mirouhml/Budget-Rails',
+    type: 'normal',
+  },
+  project2: {
+    name: 'Covid-19 Tracker Mobile App',
+    description: 'Covid-19 Treacker for all countries of the world.',
+    longDescription: 'This is a website that shows recent and old data of Covid-19 stats for all the countries of the world, it uses a universal API as the data source.',
+    featuredImage: 'https://user-images.githubusercontent.com/20567503/167962932-1af6fbbf-5623-434d-a5e7-3adfcbc8e50d.png',
+    languages: ['React', 'Redux', 'CSS'],
+    linkLive: 'https://github.com/mirouhml/covid-19-tracker',
+    linkSource: 'https://github.com/mirouhml/covid-19-tracker',
+    type: 'normal',
+  },
   project0: {
     name: 'Creative Anime Convention',
     description: 'Creative Anime Convetion 2022 is the gathering of everything anime and otaku culture, celebrating the many aspects of Japanese pop culture and its influence on the world,taking place in Algeria.',
@@ -37,16 +57,6 @@ const projects = {
     linkSource: 'https://github.com/mirouhml/GottaCatchEmAll',
     type: 'normal',
   },
-  project2: {
-    name: 'Covid-19 Tracker Mobile App',
-    description: 'Covid-19 Treacker for all countries of the world.',
-    longDescription: 'This is a website that shows recent and old data of Covid-19 stats for all the countries of the world, it uses a universal API as the data source.',
-    featuredImage: 'https://user-images.githubusercontent.com/20567503/167962932-1af6fbbf-5623-434d-a5e7-3adfcbc8e50d.png',
-    languages: ['React', 'Redux', 'CSS'],
-    linkLive: 'https://github.com/mirouhml/covid-19-tracker',
-    linkSource: 'https://github.com/mirouhml/covid-19-tracker',
-    type: 'featured',
-  },
   project3: {
     name: 'Space Travellers\' Hub',
     description: 'This is a web application for a company that provides commercial and scientific space travel services.',
@@ -66,6 +76,16 @@ const projects = {
     linkLive: 'https://mirouhml.github.io/Bookstore/',
     linkSource: 'https://github.com/mirouhml/Bookstore',
     type: 'normal',
+  },
+  project6: {
+    name: 'Al Mentoria',
+    description: 'Al Mentoria is a mentors seeking app.',
+    longDescription: 'Al Mentoria is a virtual space to connect with mentors that can help you with your technical as well as behavioral issues. If you are stuck somewhere and need a second look at things, make a reservation now.',
+    featuredImage: 'https://user-images.githubusercontent.com/20567503/180013479-d3013553-0aa4-42d8-b938-97f58f9d5791.png',
+    languages: ['React', 'Redux', 'JavaScript', 'Ruby on Rails', 'PostgreSQL', 'TailwindCSS'],
+    linkLive: 'https://almentoria.herokuapp.com/',
+    linkSource: 'https://github.com/mirouhml/al-mentoria-frontend',
+    type: 'featured',
   },
 };
 function createPopupWindow(project) {

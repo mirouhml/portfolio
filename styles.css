@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 button {
@@ -307,6 +307,7 @@ ul.social-media li {
   line-height: 24px;
   font-size: 16px;
   color: #fff;
+  flex-grow: 1;
 }
 
 .project-languages {
@@ -322,7 +323,7 @@ ul.social-media li {
 
 .project-languages li {
   border: none;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgb(196 196 196 / 48%);
   box-sizing: border-box;
   text-align: center;
   padding: 12px 10px;
