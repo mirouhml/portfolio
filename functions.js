@@ -17,7 +17,7 @@ function addevent(id) {
 const ids = ['onclick-open', 'onclick-close', 'onclick-portfolio', 'onclick-about', 'onclick-contact'];
 ids.forEach(addevent);
 const projects = {
-  project5: {
+  project0: {
     name: 'Budget Rails',
     description: 'Budget Rails is a budgeting app.',
     longDescription: 'Budget Rails is a budgeting app, it will allow you to create a budget, and track your expenses, and see how you are doing, and how you are spending your money, and you can also categorize your transactions and see how you are spending your money by category.',
@@ -27,7 +27,7 @@ const projects = {
     linkSource: 'https://github.com/mirouhml/Budget-Rails',
     type: 'normal',
   },
-  project2: {
+  project1: {
     name: 'Covid-19 Tracker Mobile App',
     description: 'Covid-19 Treacker for all countries of the world.',
     longDescription: 'This is a website that shows recent and old data of Covid-19 stats for all the countries of the world, it uses a universal API as the data source.',
@@ -37,7 +37,7 @@ const projects = {
     linkSource: 'https://github.com/mirouhml/covid-19-tracker',
     type: 'normal',
   },
-  project0: {
+  project2: {
     name: 'Creative Anime Convention',
     description: 'Creative Anime Convetion 2022 is the gathering of everything anime and otaku culture, celebrating the many aspects of Japanese pop culture and its influence on the world,taking place in Algeria.',
     longDescription: 'Creative Anime Convention or CAC offers tons of fun and educational workshops, live conferences from big and influential figures of the anime industry, new anime series and movies announcements, trailers and exclusive debut screenings, live concerts and musical performances, and many more events awaiting you across 3 days from Thursday, February 24th to Saturday, February 26th, 2022 in Sahat Chouhada, Algeirs, Algeria.',
@@ -47,7 +47,7 @@ const projects = {
     linkSource: 'https://github.com/mirouhml/anime-convention-project',
     type: 'normal',
   },
-  project1: {
+  project3: {
     name: 'Gotta Catch \'Em All',
     description: 'This a website for all pokémons.',
     longDescription: 'This is a web app where users can view all pokémons with their respective characteristics, abilities and types fetched from the Pokeapi. Users can like pokemon cards, view the number of likes each card has. Users can also leave comments and view comments made by others!',
@@ -57,7 +57,7 @@ const projects = {
     linkSource: 'https://github.com/mirouhml/GottaCatchEmAll',
     type: 'normal',
   },
-  project3: {
+  project4: {
     name: 'Space Travellers\' Hub',
     description: 'This is a web application for a company that provides commercial and scientific space travel services.',
     longDescription: 'This is a web application for a company that provides commercial and scientific space travel services. The application will use real live data from the SpaceX API, and it will allow users to book rockets and join selected space missions.',
@@ -67,7 +67,7 @@ const projects = {
     linkSource: 'https://github.com/mirouhml/mv-space-travellers',
     type: 'normal',
   },
-  project4: {
+  project5: {
     name: 'Bookstore',
     description: 'This is a "Bookstore" website, where you can add books to your list and check available categories.',
     longDescription: 'This is a "Bookstore" website, where you can add books to your list and check available categories.',
@@ -83,7 +83,7 @@ const projects = {
     longDescription: 'Al Mentoria is a virtual space to connect with mentors that can help you with your technical as well as behavioral issues. If you are stuck somewhere and need a second look at things, make a reservation now.',
     featuredImage: 'https://user-images.githubusercontent.com/20567503/180013479-d3013553-0aa4-42d8-b938-97f58f9d5791.png',
     languages: ['React', 'Redux', 'JavaScript', 'Ruby on Rails', 'PostgreSQL', 'TailwindCSS'],
-    linkLive: 'https://almentoria.herokuapp.com/',
+    linkLive: 'https://al-mentoria.herokuapp.com/',
     linkSource: 'https://github.com/mirouhml/al-mentoria-frontend',
     type: 'featured',
   },
